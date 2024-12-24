@@ -6,6 +6,7 @@
 
 body{
   background: linear-gradient(to bottom, #00823a, #001021);
+  height: 100vh;
 }
 
 
@@ -64,9 +65,7 @@ body{
 }
 
 
-.layer0{
-  width: 25px;
-}
+
 .layer1{
   width: 50px;
 }
@@ -105,26 +104,35 @@ body{
   }
 }
 .light1{
-  background-color: red ;
+  background: radial-gradient(circle, red, darkred);
+  box-shadow: 0 0 40px red, 0 0 80px darkred;
+  animation-delay: 0.2s;
+  /* background: radial-gradient(circle, red, darkred);
   box-shadow: 0 0 40px red,
               0 0 80px red,
               0 0 120px red,
-              0 0 160px red;
+              0 0 160px red; */
 }
 
 .light2{
-  background-color: rgb(255, 255, 0) ;
+  background: radial-gradient(circle, yellow, orange);
+  box-shadow: 0 0 40px yellow, 0 0 80px orange;
+  animation-delay: 0.5s;
+  /* background-color: rgb(255, 255, 0) ;
   box-shadow: 0 0 40px rgb(255, 255, 0),
               0 0 80px rgb(255, 255, 0),
               0 0 120px rgb(255, 255, 0),
-              0 0 160px rgb(255, 255, 0);
+              0 0 160px rgb(255, 255, 0); */
 }
 .light3{
-  background-color: blue;
+  background: radial-gradient(circle, blue, darkblue);
+  box-shadow: 0 0 40px blue, 0 0 80px darkblue;
+  animation-delay: 0.8s;
+  /* background-color: blue;
   box-shadow: 0 0 40px rgb(0, 0, 255),
               0 0 80px rgb(0, 0, 255),
               0 0 120px rgb(0, 0, 255),
-              0 0 160px rgb(0, 0, 255);
+              0 0 160px rgb(0, 0, 255); */
 }
 
 .tree-base{
