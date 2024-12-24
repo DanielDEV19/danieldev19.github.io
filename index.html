@@ -8,9 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <script defer src="https://app.embed.im/snow.js"></script>
   </head>
-  <body>
+  <body onclick="playAudio()">
     <div class="card-tree">
       <div class="tree-container">
         <div class="star">★</div>
@@ -57,11 +58,22 @@
         <div class="tree-base"></div>
       </div>
       <div class="message">
-        <h1 class="message-title">🎁¡ Feliz Navidad !🎁</h1>
-        <p class="message-subtitle">🌟 Que la magia de la Navidad ilumine tu corazón y tu hogar. 🌟</p>
-        <p class="message-subtitle">🎄 ¡Te deseo felicidad, paz y amor! 🎄</p>
-   
+        <h1 class="message-title" id="christmas-title">🎁¡ Feliz Navidad !🎁</h1>
+        <p class="message-subtitle">🌟 <!-- Que la magia de la Navidad ilumine tu corazón y tu hogar.  --> Llegó la Navidad y es momento de brillar.🌟</p>
+        <p class="message-subtitle">🎄 ¡Les deseo unas felices fiestas llenas de paz, amor y prosperidad! 🎄</p>
       </div>
+      <audio id="miAudio" loops>
+        <source src="Jingle Bells (Instrumental).mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+      </audio>
     </div>
+
+
+    <script>
+      function playAudio(){
+        document.getElementById('miAudio').play();
+        document.getElementById('miAudio').volume=0.65;
+      }
+    </script>
   </body>
 </html>
