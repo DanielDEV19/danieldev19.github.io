@@ -20,24 +20,6 @@ body{
   overflow: hidden;
 }
 
-.santa{
-  position: absolute;
-  top: 5px;
-  left: -20%;
-  display: flex;
-  gap: 8px;
-  font-size: 35px;
-  animation: flyes 12s linear infinite;
-}
-
-@keyframes flyes{
-  0%{
-    transform: translateX(120vw);
-  }
-  100%{
-    transform: translateX(0);
-  }
-}
 
 .tree-container{
   text-align: center;
@@ -82,7 +64,9 @@ body{
 }
 
 
-
+.layer0{
+  width: 25px;
+}
 .layer1{
   width: 50px;
 }
@@ -169,26 +153,4 @@ body{
   font-size: 20px;
   font-weight: 500;
   color: white;
-}
-
-.santabajo{
-  position: absolute;
-  flex-direction: row-reverse;
-  bottom: 5px;
-  right: 100%;
-  display: flex;
-  gap: 8px;
-  font-size: 35px;
-  animation: flyse 12s linear infinite;
-}
-
-
-@keyframes flyse{
-  100%{
-    transform: translateX(120vw);
-  }
-  0%{
-    transform: translateX(0);
-  }
-
 }
